@@ -1,4 +1,4 @@
-package com.example.my.pet.transport.service;
+package com.example.my.pet.transport.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
