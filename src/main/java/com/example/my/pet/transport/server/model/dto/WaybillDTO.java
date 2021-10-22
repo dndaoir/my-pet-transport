@@ -3,33 +3,32 @@ package com.example.my.pet.transport.server.model.dto;
 import lombok.Data;
 
 /**
- *  订单-用户交互对象
+ *  运单-用户交互对象
  *
  * @author dndaoir
  * @since 2021-10-22
  */
 @Data
-public class OrderDTO {
-
+public class WaybillDTO {
     /**
      * 订单id
      */
-    private Long orderId;
+    private Long waybillId;
 
     /**
      * 订单状态
      */
-    private Integer orderStatus;
+    private Integer waybillStatus;
 
     /**
      * 寄件地址
      */
-    private Address sendAddress;
+    private OrderDTO.Address sendAddress;
 
     /**
      * 收件地址
      */
-    private Address receiveAddress;
+    private OrderDTO.Address receiveAddress;
 
     /**
      * 运输员id
@@ -59,4 +58,3 @@ public class OrderDTO {
         private String AddressDetail;
     }
 }
-
