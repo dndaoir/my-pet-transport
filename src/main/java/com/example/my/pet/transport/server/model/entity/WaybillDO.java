@@ -64,6 +64,16 @@ public class WaybillDO {
     private Integer waybillStatus;
 
     /**
+     * 寄件地址
+     */
+    private String sendAddress;
+
+    /**
+     * 收件地址
+     */
+    private String receiveAddress;
+
+    /**
      *派件人id
      */
     private Long transporterId;

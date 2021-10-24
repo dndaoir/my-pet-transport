@@ -1,5 +1,6 @@
 package com.example.my.pet.transport.server.model.dto;
 
+import com.example.my.pet.transport.server.model.utils.Address;
 import lombok.Data;
 
 /**
@@ -23,38 +24,16 @@ public class WaybillDTO {
     /**
      * 寄件地址
      */
-    private OrderDTO.Address sendAddress;
+    private Address sendAddress;
 
     /**
      * 收件地址
      */
-    private OrderDTO.Address receiveAddress;
+    private Address receiveAddress;
 
     /**
      * 运输员id
      */
     private Long transporterId;
 
-    @Data
-    public class Address {
-        /**
-         * 所在省code
-         */
-        private Long provinceCode;
-
-        /**
-         * 所在市code
-         */
-        private Long cityCode;
-
-        /**
-         * 所在区县code
-         */
-        private Long areaCode;
-
-        /**
-         * 详细地址
-         */
-        private String AddressDetail;
-    }
 }

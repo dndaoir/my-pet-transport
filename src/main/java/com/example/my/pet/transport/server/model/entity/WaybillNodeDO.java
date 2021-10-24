@@ -24,6 +24,16 @@ public class WaybillNodeDO {
     private Long waybillNodeId;
 
     /**
+     * 运单id
+     */
+    private Long waybillId;
+
+    /**
+     * 运单号
+     */
+    private String waybillNo;
+
+    /**
      * 运单节点时间
      */
     private Date waybillNodeTime;
